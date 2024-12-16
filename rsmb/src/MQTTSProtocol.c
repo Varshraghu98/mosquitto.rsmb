@@ -270,7 +270,7 @@ int MQTTSProtocol_handleAdvertises(void* pack, int sock, char* clientAddr, Clien
 	FUNC_ENTRY;
 	Log(LOG_PROTOCOL, 31, NULL, sock, "", clientAddr, advertisePack->gwId, advertisePack->duration);
 
-	ftime(&ts);
+	//ftime(&ts);
 	timeinfo = localtime(&ts.time);
 
 	listener = Socket_getParentListener(sock);
